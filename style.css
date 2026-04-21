@@ -1,0 +1,74 @@
+/* Reset de base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    padding: 20px;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Container Flexbox */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espace régulier entre les blocs */
+    justify-content: center;
+}
+
+/* Style de la carte */
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden; /* Pour que l'image respecte les coins arrondis */
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.card img {
+    width: 100%; /* L'image prend toute la largeur */
+    height: auto;
+    border-radius: 8px; /* Optionnel : arrondi aussi l'image interne */
+}
+
+.card-content {
+    padding-top: 15px;
+}
+
+.card-content h3 {
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+}
+
+/* --- RESPONSIVE --- */
+
+/* Mobile (1 colonne par défaut) */
+.card {
+    flex: 1 1 100%;
+}
+
+/* Tablette (2 colonnes) */
+@media (min-width: 600px) {
+    .card {
+        flex: 1 1 calc(50% - 20px); /* 50% moins le gap */
+    }
+}
+
+/* Desktop (4 colonnes) */
+@media (min-width: 1024px) {
+    .card {
+        flex: 1 1 calc(25% - 20px); /* 25% moins le gap */
+    }
+}
