@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio moderne</title>
+  <link href="M.css" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+    body{background:#f4f7fc;color:#1f2a44}
+
+    header{
+      display:flex;justify-content:space-between;align-items:center;
+      padding:20px 60px;background:#fff
+    }
+
+    header h2{
+      background:#3b5bdb;color:#fff;padding:10px 15px;border-radius:10px
+    }
+
+    nav a{margin-left:25px;text-decoration:none;color:#1f2a44;font-weight:500}
+
+    .hero{
+      margin:30px auto;
+      max-width:1200px;
+      background:#fff;
+      padding:40px;
+      border-radius:20px;
+      display:flex;justify-content:space-between;align-items:center;
+      box-shadow:0 10px 30px rgba(0,0,0,0.05)
+    }
+
+    .hero-text h1{font-size:36px;margin-bottom:15px}
+    .hero-text p{color:#555;margin-bottom:20px}
+
+    .buttons button{
+      padding:10px 18px;border-radius:8px;border:none;cursor:pointer;margin-right:10px;
+      transition:0.3s
+    }
+
+    .btn-primary{background:#3b5bdb;color:#fff}
+    .btn-primary:hover{background:#2f4acb}
+
+    .btn-secondary{background:#eef1f7}
+    .btn-secondary:hover{background:#dfe5f1}
+
+    .hero img{width:260px;border-radius:20px}
+
+    .section-title{text-align:center;margin:40px 0 20px}
+
+    .about{
+      display:grid;grid-template-columns:repeat(2,1fr);gap:20px;
+      max-width:1100px;margin:auto
+    }
+
+    .box{
+      background:#fff;padding:20px;border-radius:15px;
+      box-shadow:0 5px 20px rgba(0,0,0,0.05)
+    }
+
+    .projects{
+      max-width:1100px;margin:30px auto;
+      display:grid;grid-template-columns:repeat(3,1fr);gap:20px
+    }
+
+    .card{
+      background:#fff;border-radius:15px;overflow:hidden;
+      box-shadow:0 5px 20px rgba(0,0,0,0.05);
+      transition:0.3s
+    }
+
+    .card:hover{transform:translateY(-5px)}
+
+    .card img{width:100%;height:150px;object-fit:cover}
+    .card-content{padding:15px}
+
+    .profile{
+      max-width:1100px;margin:40px auto;
+      display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center
+    }
+
+    .profile div{
+      background:#fff;padding:20px;border-radius:15px;
+      box-shadow:0 5px 20px rgba(0,0,0,0.05)
+    }
+
+    .contact{
+      max-width:1100px;margin:40px auto;
+      background:#3b5bdb;color:#fff;text-align:center;
+      padding:40px;border-radius:20px
+    }
+
+    footer{text-align:center;margin:20px;color:#777}
+
+    @media(max-width:900px){
+      .hero{flex-direction:column;text-align:center}
+      .about{grid-template-columns:1fr}
+      .projects{grid-template-columns:1fr 1fr}
+      .profile{grid-template-columns:1fr 1fr}
+    }
+
+    @media(max-width:600px){
+      .projects{grid-template-columns:1fr}
+      .profile{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h2>AN</h2>
+  <nav>
+    <a href="#">Accueil</a>
+    <a href="#">À propos</a>
+    <a href="#">Projets</a>
+    <a href="#">Profil</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>Construire mon parcours avec passion, créativité et ambition</h1>
+    <p>Bonjour, je suis Maimouna, étudiante passionnée par le numérique.</p>
+    <div class="buttons">
+      <button class="btn-primary">Voir mes projets</button>
+      <button class="btn-secondary">Me contacter</button>
+    </div>
+  </div>
+  <img src="WhatsApp Image 2026-04-14 at 19.38.32.jpeg" alt="photo">
+</section>
+
+<h2 class="section-title">À propos de moi</h2>
+<section class="about">
+  <div class="box"><h3>Mon parcours</h3><p>Étudiante motivée dans le numérique.</p></div>
+  <div class="box"><h3>Mes objectifs</h3><p>Développer un profil solide.</p></div>
+  <div class="box"><h3>Mes qualités</h3><p>Organisation et créativité.</p></div>
+  <div class="box"><h3>Ce que je recherche</h3><p>Opportunités et projets.</p></div>
+</section>
+
+<h2 class="section-title">Mes projets</h2>
+<section class="projects">
+  <div class="card"><img src="db9ba2e77c89655bd1b8d07271db7ba4.jpg"><div class="card-content"><h3>Mini site</h3></div></div>
+  <div class="card"><img src="4ac2f360d4ed6238931d4268ae5702c7.jpg"><div class="card-content"><h3>Interface web</h3></div></div>
+  <div class="card"><img src="bb25e3bd40dc5b3c46621c6e29327f99.jpg"><div class="card-content"><h3>JavaScript</h3></div></div>
+  <div class="card"><img src="1572ff60f781820b9cdb5b333f003304.jpg"><div class="card-content"><h3>Travail groupe</h3></div></div>
+  <div class="card"><img src="1a88c67f6abc2f5de34c16a861443e3b.jpg"><div class="card-content"><h3>Présentation</h3></div></div>
+  <div class="card"><img src="c74d8db953a1c199c5b513fdae843aab.jpg"><div class="card-content"><h3>Apprentissage</h3></div></div>
+</section>
+
+<h2 class="section-title">Mon profil</h2>
+<section class="profile">
+  <div><h3>2026</h3><p>Progression</p></div>
+  <div><h3>5+</h3><p>Projets</p></div>
+  <div><h3>100%</h3><p>Motivation</p></div>
+  <div><h3>UI</h3><p>Design</p></div>
+</section>
+
+<section class="contact">
+  <h2>Contact</h2>
+  <p>Contactez-moi pour collaborer</p>
+  <button class="btn-secondary">Envoyer un email</button>
+</section>
+
+<footer>© 2026 Portfolio</footer>
+
+</body>
+</html>
